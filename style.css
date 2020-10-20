@@ -1,0 +1,70 @@
+body {
+  color: #393b44;
+  font-family: "Nova Square", cursive;
+  font-size: 19px;
+  text-align: center;
+  padding: 0px;
+  margin: 30px 70px;
+}
+h1 {
+  font-weight: bold;
+  font-size: 44px;
+}
+.container {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  padding-left: 0px;
+  padding-right: 0px;
+  box-shadow: 9px 9px 10px #000;
+}
+.cities {
+  border-radius: 4px;
+}
+.button {
+  background: #6c757d;
+  color: white;
+  border-radius: 4px;
+  transition: all 200ms ease-in-out;
+}
+.button:hover {
+  background: #596368;
+}
+
+#city {
+  font-family: "Bungee Shade", cursive;
+  font-weight: bolder;
+  color: rgb(82, 21, 180);
+  font-size: 25px;
+}
+
+#current-location-button {
+  background: #6c757d;
+  color: white;
+  border-radius: 4px;
+  transition: all 200ms ease-in-out;
+  box-shadow: 2px 2px 1px #000;
+}
+
+#current-location-button:hover {
+  background: #596368;
+}
+
+#date {
+  font-family: "Bungee Shade", cursive;
+  color: rgb(195, 43, 226);
+  font-size: 25px;
+}
+
+#time {
+  font-weight: bold;
+  color: rgb(53, 14, 224);
+}
+
+#temperature {
+  font-family: "Bungee Shade", cursive;
+}
+
+#description {
+  font-family: "Bungee Shade", cursive;
+}
