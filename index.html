@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link rel="stylesheet" href="src/style.css" />
+  <script src="https://kit.fontawesome.com/f153ce5903.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <title>Weather App Project</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-6">Humidity <span id="humidity">54</span>%</div>
+      <div class="col-6" id="time">Current Time</div>
+    </div>
+    <div class="row">
+      <div class="col-6">Wind <span id="wind">9</span> mph</div>
+      <div class="col-6">
+        <div class="dropdown">
+          <button type="button" class="btn btn-secondary" id="current-location-button">Current Location</button>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <h1>
+      <i class="fas fa-cloud"></i>
+      <span class="temperature" id="temperature">80</span>°
+      <i class="fas fa-sun"></i>
+      </br>
+      <span id="description">Cold</span>
+      <hr />
+    </h1>
+    <p>
+      <a href="#" id="celsius-link">°C</a> |
+      <a href="#" id="fahrenheit-link">°F</a>
+    </p>
+    <div class="row">
+      <div class="col-6" id="date">Friday, September 25th</div>
+      <div class="col-6" id="city">New York, NY</div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-12">
+        <form id="search-form">
+          <input type="text" placeholder="Search Cities Now" autocomplete="off" autofocus="on" id="city-input"
+            class="cities" />
+          <input type="submit" value="Search" class="button" />
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-2" id="day1">SAT</div>
+      <div class="col-2" id="day2">SUN</div>
+      <div class="col-2" id="day3">MON</div>
+      <div class="col-2" id="day4">TUE</div>
+      <div class="col-2" id="day5">WED</div>
+      <div class="col-2" id="day6">THU</div>
+    </div>
+    <div class="row">
+      <div class="col-2"><i class="fas fa-cloud"></i></div>
+      <div class="col-2"><i class="fas fa-sun"></i></div>
+      <div class="col-2"><i class="fas fa-cloud"></i></div>
+      <div class="col-2"><i class="fas fa-sun"></i></div>
+      <div class="col-2"><i class="fas fa-sun"></i></div>
+      <div class="col-2"><i class="fas fa-sun"></i></div>
+    </div>
+    <div class="row">
+      <div class="col-2">75°</div>
+      <div class="col-2">82°</div>
+      <div class="col-2">75°</div>
+      <div class="col-2">82°</div>
+      <div class="col-2">82°</div>
+      <div class="col-2">82°</div>
+    </div>
+  </div>
+  <script src="src/script.js"></script>
+</body>
+
+</html>
