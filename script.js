@@ -1,32 +1,45 @@
-function formatDate(timestamp) {
-  let date = new Date(timestamp);
-
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
-  ];
-  let day = days[date.getDay()];
-  return `${day} ${formatHours(timestamp)}`;
+let now = new Date();
+let hours = now.getHours();
+let minutes = now.getMinutes();
+if (hours < 10) {
+  hours = `0${hours}`;
+}
+if (minutes < 10) {
+  minutes = `0${minutes}`;
 }
 
-function formatHours(timestamp) {
-  let date = new Date(timestamp);
-  let hours = date.getHours();
-  if (hours < 10) {
-    hours = `0${hours}`;
-  }
-  let minutes = date.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
+let year = now.getFullYear();
+let date = now.getDate();
+let days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+let months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+let day = days[now.getDay()];
+let month = months[now.getMonth()];
 
-  return `${hours}:${minutes}`;
-}
+let currentTime = document.querySelector("#time");
+currentTime.innerHTML = `${hours}:${minutes}`;
+let currentDate = document.querySelector("#date");
+currentDate.innerHTML = `${day}, ${month} ${date}, ${year}`;
 
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
@@ -52,7 +65,7 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-function dispalyForecast(response) {
+function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = null;
   let forecast = null;
