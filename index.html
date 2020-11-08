@@ -15,82 +15,84 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-6">Humidity <span id="humidity">54</span>%</div>
-      <div class="col-6" id="time">Current Time</div>
-    </div>
-    <div class="row">
-      <div class="col-6">Wind <span id="wind">9</span> mph</div>
-      <div class="col-6">
-        <div class="dropdown">
-          <button type="button" class="btn btn-secondary" id="current-location-button">Current Location</button>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+  <div class="d-flex p-2 bd-highlight">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">Humidity <span id="humidity">54</span>%</div>
+        <div class="col-6" id="time">Current Time</div>
+      </div>
+      <div class="row">
+        <div class="col-6">Wind <span id="wind">9</span> mph</div>
+        <div class="col-6">
+          <div class="dropdown">
+            <button type="button" class="btn btn-secondary" id="current-location-button">Current Location</button>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <br />
-    <h1>
-      <i class="fas fa-cloud"></i>
-      <span class="temperature" id="temperature">80</span>°
-      <i class="fas fa-sun"></i>
-      </br>
-      <span id="description">Cold</span>
-      <hr />
-    </h1>
-    <p>
-      <a href="#" id="celsius-link">°C</a> |
-      <a href="#" id="fahrenheit-link">°F</a>
-    </p>
-    <div class="row">
-      <div class="col-6" id="date">Friday, September 25th</div>
-      <div class="col-6" id="city">New York, NY</div>
-    </div>
-    <br />
-    <div class="row">
-      <div class="col-12">
-        <form id="search-form">
-          <input type="text" placeholder="Search Cities Now" autocomplete="off" autofocus="on" id="city-input"
-            class="cities" />
-          <input type="submit" value="Search" class="button" />
-        </form>
+      <br />
+      <h1>
+        <i class="fas fa-cloud"></i>
+        <span class="temperature" id="temperature">80</span>°
+        <i class="fas fa-sun"></i>
+        </br>
+        <span id="description">Cold</span>
+        <hr />
+      </h1>
+      <p>
+        <a href="#" id="celsius-link">°C</a> |
+        <a href="#" id="fahrenheit-link">°F</a>
+      </p>
+      <div class="row">
+        <div class="col-6" id="date">Friday, September 25th</div>
+        <div class="col-6" id="city">New York, NY</div>
       </div>
-    </div>
-    <br />
-    <div class="row">
-      <div class="col-2" id="day1">SAT</div>
-      <div class="col-2" id="day2">SUN</div>
-      <div class="col-2" id="day3">MON</div>
-      <div class="col-2" id="day4">TUE</div>
-      <div class="col-2" id="day5">WED</div>
-      <div class="col-2" id="day6">THU</div>
-    </div>
-    <div class="row">
-      <div class="col-2"><i class="fas fa-cloud"></i></div>
-      <div class="col-2"><i class="fas fa-sun"></i></div>
-      <div class="col-2"><i class="fas fa-cloud"></i></div>
-      <div class="col-2"><i class="fas fa-sun"></i></div>
-      <div class="col-2"><i class="fas fa-sun"></i></div>
-      <div class="col-2"><i class="fas fa-sun"></i></div>
-    </div>
-    <div class="row">
-      <div class="col-2">75°</div>
-      <div class="col-2">82°</div>
-      <div class="col-2">75°</div>
-      <div class="col-2">82°</div>
-      <div class="col-2">82°</div>
-      <div class="col-2">82°</div>
-    </div>
-    <div>
-      <small>
-        <a href="" target="_blank">
-          Open-source code </a>by Heidi Sandi
-      </small>
+      <br />
+      <div class="row">
+        <div class="col-12">
+          <form id="search-form">
+            <input type="text" placeholder="Search Cities Now" autocomplete="off" autofocus="on" id="city-input"
+              class="cities" />
+            <input type="submit" value="Search" class="button" />
+          </form>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-2" id="day1">SAT</div>
+        <div class="col-2" id="day2">SUN</div>
+        <div class="col-2" id="day3">MON</div>
+        <div class="col-2" id="day4">TUE</div>
+        <div class="col-2" id="day5">WED</div>
+        <div class="col-2" id="day6">THU</div>
+      </div>
+      <div class="row">
+        <div class="col-2"><i class="fas fa-cloud"></i></div>
+        <div class="col-2"><i class="fas fa-sun"></i></div>
+        <div class="col-2"><i class="fas fa-cloud"></i></div>
+        <div class="col-2"><i class="fas fa-sun"></i></div>
+        <div class="col-2"><i class="fas fa-sun"></i></div>
+        <div class="col-2"><i class="fas fa-sun"></i></div>
+      </div>
+      <div class="row">
+        <div class="col-2">75°</div>
+        <div class="col-2">82°</div>
+        <div class="col-2">75°</div>
+        <div class="col-2">82°</div>
+        <div class="col-2">82°</div>
+        <div class="col-2">82°</div>
+      </div>
+      <div>
+        <small>
+          <a href="" target="_blank">
+            Open-source code </a>by Heidi Sandi
+        </small>
+      </div>
     </div>
   </div>
   <script src="script.js"></script>
