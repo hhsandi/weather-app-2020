@@ -92,6 +92,11 @@ function convertToCelsius(event) {
   temperatureElement.innerHTML = 19;
 }
 
+function changeWeatherIcon(event) {
+  event.preventDeFault();
+  let iconElement = document.querySelector("#icon");
+  iconElement.innerHTML = "http://openweatherap.org/img/wn/04d@2x.png";
+}
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
