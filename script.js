@@ -53,6 +53,7 @@ function displayWeatherCondition(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+  document.querySelector("#icon").attribute = response.data.icon
 }
 
 function searchCity(city) {
