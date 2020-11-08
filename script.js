@@ -101,6 +101,11 @@ function search(city) {
   axios.get(apiUrl).then(dispalyForecast);
 }
 
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+
 function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
