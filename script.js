@@ -8,7 +8,6 @@ if (minutes < 10) {
   minutes = `0${minutes}`;
 }
 
-let year = now.getFullYear();
 let date = now.getDate();
 let days = [
   "Sunday",
@@ -39,7 +38,7 @@ let month = months[now.getMonth()];
 let currentTime = document.querySelector("#time");
 currentTime.innerHTML = `${hours}:${minutes}`;
 let currentDate = document.querySelector("#date");
-currentDate.innerHTML = `${day}, ${month} ${date}, ${year}`;
+currentDate.innerHTML = `${day}, ${month} ${date}`;
 
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
