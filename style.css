@@ -69,13 +69,24 @@ h1 {
   font-family: "Bungee Shade", cursive;
 }
 
-.weather-forecast {
-  margin-top: 10px;
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
 
 .weather-forecast h3 {
   color:black;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 400;
   text-align: center;
   height: 15px;
@@ -93,7 +104,7 @@ h1 {
 .weather-forecast-temperature {
   text-align: center;
   color: black;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   height: auto;
   line-height: 15px;
