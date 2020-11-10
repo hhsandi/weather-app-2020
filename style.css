@@ -82,14 +82,14 @@ h1 {
 .weather-forecast img {
   display: block;
   margin: 0 auto;
-  height: 40px;
-  width: 40px;
+  height: 44px;
+  width: 44px;
 }
 
 .weather-forecast-temperature {
   text-align: center;
   color: black;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
   height: auto;
   line-height: 15px;
