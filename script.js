@@ -41,7 +41,18 @@ let currentDate = document.querySelector("#date");
 currentDate.innerHTML = `${day}, ${month} ${date}`;
 
 function formatHours(timestamp) {
-  return `${hours}:${minutes}`
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  return `${hours}:${minutes}`;
 }
 
 function displayWeatherCondition(response) {
@@ -113,8 +124,8 @@ let celsiusTemperature = null;
 
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
-  forecastElement.innerHTML = null;
   let forecast = null;
+  forecastElement.innerHTML = null;
 
   for (let index = 0; index < 6; index++) {
     forecast = response.data.list[index];
