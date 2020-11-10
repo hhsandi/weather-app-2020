@@ -35,7 +35,7 @@ h1 {
   font-family: "Bungee Shade", cursive;
   font-weight: bolder;
   color: rgb(82, 21, 180);
-  font-size: 25px;
+  font-size: 23px;
 }
 
 #current-location-button {
@@ -53,7 +53,7 @@ h1 {
 #date {
   font-family: "Bungee Shade", cursive;
   color: rgb(195, 43, 226);
-  font-size: 25px;
+  font-size: 23px;
 }
 
 #time {
