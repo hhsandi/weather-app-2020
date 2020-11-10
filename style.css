@@ -71,7 +71,7 @@ h1 {
 
 .weather-forecast h3 {
   color:black;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 400;
   text-align: center;
   height: 15px;
@@ -79,10 +79,17 @@ h1 {
   padding-top: 7px;
 }
 
+.weather-forecast img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
+
 .weather-forecast-temperature {
   text-align: center;
   color: black;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   height: auto;
   line-height: 15px;
