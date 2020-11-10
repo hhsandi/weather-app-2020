@@ -69,6 +69,10 @@ h1 {
   font-family: "Bungee Shade", cursive;
 }
 
+.weather-forecast {
+  margin-top: 10px;
+}
+
 .weather-forecast h3 {
   color:black;
   font-size: 17px;
