@@ -93,4 +93,5 @@ h1 {
   font-weight: 400;
   height: auto;
   line-height: 15px;
+  white-space: nowrap;
 }
